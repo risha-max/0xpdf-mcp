@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oxpdf-mcp"
+version = "0.1.0"
+description = "MCP server for 0xPdf — schema-first PDF to structured JSON for AI agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = ["mcp", "pdf", "ocr", "json", "schema", "0xpdf", "agents"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+dependencies = [
+  "httpx>=0.27.0",
+  "mcp>=1.27.0",
+]
+
+[project.urls]
+Homepage = "https://0xpdf.io"
+Documentation = "https://0xpdf.io/docs#mcp"
+Playground = "https://0xpdf.io/samples"
+Repository = "https://github.com/risha-max/0xpdf-mcp"
+Issues = "https://github.com/risha-max/0xpdf-mcp/issues"
+
+[project.scripts]
+oxpdf-mcp = "oxpdf_mcp.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
