@@ -81,3 +81,14 @@ Full list and env vars: see source `oxpdf_mcp/server.py` and [docs](https://0xpd
 ## License
 
 MIT
+
+## Publishing notes (maintainers)
+
+PyPI Trusted Publishing must be configured for `risha-max/0xpdf-mcp` workflow `publish.yml` before `v*` tags succeed. Pending publisher fields:
+
+- Owner: `risha-max`
+- Repository: `0xpdf-mcp`
+- Workflow: `publish.yml`
+- Environment: (leave empty)
+
+Then re-run the failed tag workflow or bump/tag.
