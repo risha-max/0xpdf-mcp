@@ -1,0 +1,6 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": ["risha-max"],
+  "name": "0xPdf",
+  "description": "Schema-first PDF → JSON MCP server for invoices, forms, and documents via the 0xPdf API."
+}
